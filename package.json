@@ -15,6 +15,7 @@
   "scripts": {
     "test": "node test.js"
   },
+  "bin": "cli.js",
   "files": [
     "cli.js",
     "index.js"
