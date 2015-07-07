@@ -1,0 +1,36 @@
+{
+  "name": "screensaver",
+  "version": "1.0.0",
+  "description": "Start the screensaver.",
+  "license": "MIT",
+  "repository": "gillstrom/screensaver",
+  "author": {
+    "email": "andreasgillstrom@gmail.com",
+    "name": "Andreas Gillström",
+    "url": "github.com/gillstrom"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "files": [
+    "cli.js",
+    "index.js"
+  ],
+  "keywords": [
+    "cli",
+    "cli-app",
+    "mac",
+    "osx",
+    "screensaver",
+    "screen saver"
+  ],
+  "dependencies": {
+    "meow": "^3.3.0"
+  },
+  "devDependencies": {
+    "ava": "^0.0.4"
+  }
+}
