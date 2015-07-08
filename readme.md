@@ -2,7 +2,7 @@
 
 > Start the screensaver.
 
-*Currently OS X systems only.*
+*Currently OS X and Windows systems only.*
 
 
 ## Install

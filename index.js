@@ -1,23 +1,31 @@
 'use strict';
-var execFile = require('child_process').execFile;
+var osxScreensaver = require('osx-screensaver');
+var winScreensaver = require('win-screensaver');
 
 module.exports = function (cb) {
-	if (process.platform !== 'darwin') {
-		throw new Error('Only OS X systems are supported');
+	if (process.platform === 'darwin') {
+		osxScreensaver(function (err) {
+			if (err) {
+				cb(err)
+				return;
+			}
+
+			cb();
+		});
+
+		return;
+	} else if (process.platform === 'win32') {
+		winScreensaver(function (err) {
+			if (err) {
+				cb(err)
+				return;
+			}
+
+			cb();
+		});
+
+		return;
 	}
 
-	var cmd = 'open';
-	var args = [
-		'-a',
-		'ScreenSaverEngine'
-	];
-
-	execFile(cmd, args, function (err) {
-		if (err) {
-			cb(err);
-			return;
-		}
-
-		cb();
-	});
+	throw new Error('Only OS X and Windows systems are supported');
 };
