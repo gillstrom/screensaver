@@ -23,6 +23,7 @@
   "keywords": [
     "cli",
     "cli-app",
+    "linux",
     "mac",
     "osx",
     "screen saver",
@@ -32,7 +33,8 @@
   "dependencies": {
     "meow": "^3.3.0",
     "osx-screensaver": "^1.0.0",
-    "win-screensaver": "^1.0.1"
+    "win-screensaver": "^1.0.1",
+    "xdg-screensaver": "^1.0.0"
   },
   "devDependencies": {
     "ava": "^0.0.4"
