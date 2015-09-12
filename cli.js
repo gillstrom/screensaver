@@ -3,7 +3,7 @@
 var meow = require('meow');
 var screensaver = require('./');
 
-var cli = meow({
+meow({
 	help: [
 		'Usage',
 		'  $ screensaver'
