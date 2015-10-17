@@ -3,12 +3,10 @@
 var meow = require('meow');
 var screensaver = require('./');
 
-meow({
-	help: [
-		'Usage',
-		'  $ screensaver'
-	]
-});
+meow([
+	'Usage',
+	'  $ screensaver'
+]);
 
 screensaver(function (err) {
 	if (err) {
