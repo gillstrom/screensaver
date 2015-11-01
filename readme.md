@@ -10,17 +10,6 @@ $ npm install --save screensaver
 ```
 
 
-## Usage
-
-```js
-var screensaver = require('screensaver');
-
-screensaver(function (err) {
-	console.log('Screensaver started');
-});
-```
-
-
 ## CLI
 
 ```
@@ -32,6 +21,17 @@ $ screensaver --help
 
   Usage
     $ screensaver
+```
+
+
+## API
+
+```js
+const screensaver = require('screensaver');
+
+screensaver().then(() => {
+	console.log('Screensaver started');
+});
 ```
 
 

@@ -32,12 +32,17 @@
   ],
   "dependencies": {
     "meow": "^3.3.0",
-    "osx-screensaver": "^1.0.0",
-    "win-screensaver": "^1.0.1",
-    "xdg-screensaver": "^1.0.0"
+    "osx-screensaver": "^2.1.0",
+    "win-screensaver": "^2.0.0",
+    "xdg-screensaver": "^2.0.0"
   },
   "devDependencies": {
     "ava": "*",
     "xo": "*"
+  },
+  "xo": {
+    "ignores": [
+      "test.js"
+    ]
   }
 }
