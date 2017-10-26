@@ -1,48 +1,48 @@
 {
-  "name": "screensaver",
-  "version": "2.0.0",
-  "description": "Start the screensaver.",
-  "license": "MIT",
-  "repository": "gillstrom/screensaver",
-  "author": {
-    "email": "andreasgillstrom@gmail.com",
-    "name": "Andreas Gillström",
-    "url": "github.com/gillstrom"
-  },
-  "engines": {
-    "node": ">=0.10.0"
-  },
-  "scripts": {
-    "test": "xo && ava"
-  },
-  "bin": "cli.js",
-  "files": [
-    "cli.js",
-    "index.js"
-  ],
-  "keywords": [
-    "cli",
-    "cli-app",
-    "linux",
-    "mac",
-    "osx",
-    "screen saver",
-    "screensaver",
-    "windows"
-  ],
-  "dependencies": {
-    "meow": "^3.3.0",
-    "osx-screensaver": "^2.1.0",
-    "win-screensaver": "^2.0.0",
-    "xdg-screensaver": "^2.0.0"
-  },
-  "devDependencies": {
-    "ava": "*",
-    "xo": "*"
-  },
-  "xo": {
-    "ignores": [
-      "test.js"
-    ]
-  }
+	"name": "screensaver",
+	"version": "2.0.0",
+	"description": "Start the screensaver",
+	"license": "MIT",
+	"repository": "gillstrom/screensaver",
+	"author": {
+		"email": "andreasgillstrom@gmail.com",
+		"name": "Andreas Gillström",
+		"url": "github.com/gillstrom"
+	},
+	"engines": {
+		"node": ">=4"
+	},
+	"scripts": {
+		"test": "xo && ava"
+	},
+	"bin": "cli.js",
+	"files": [
+		"cli.js",
+		"index.js"
+	],
+	"keywords": [
+		"cli",
+		"cli-app",
+		"linux",
+		"mac",
+		"osx",
+		"screen saver",
+		"screensaver",
+		"windows"
+	],
+	"dependencies": {
+		"meow": "^3.3.0",
+		"osx-screensaver": "^2.1.0",
+		"win-screensaver": "^2.0.0",
+		"xdg-screensaver": "^2.0.0"
+	},
+	"devDependencies": {
+		"ava": "*",
+		"xo": "*"
+	},
+	"xo": {
+		"ignores": [
+			"test.js"
+		]
+	}
 }

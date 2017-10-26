@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 'use strict';
-var meow = require('meow');
-var screensaver = require('./');
+const meow = require('meow');
+const screensaver = require('./');
 
-meow([
-	'Usage',
-	'  $ screensaver'
-]);
+meow(`
+	Usage
+	  $ screensaver
+`);
 
 screensaver();
