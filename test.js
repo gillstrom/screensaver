@@ -1,6 +1,7 @@
 import test from 'ava';
-import fn from './';
+import m from '.';
 
 test('Start screensaver', async t => {
-	await fn();
+	await m();
+	t.pass();
 });
